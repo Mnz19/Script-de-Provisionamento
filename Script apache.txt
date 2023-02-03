@@ -1,0 +1,11 @@
+#!/bin/bash
+
+apt-get install apache2 -y
+apt-get install unzip -y
+
+cd/tmp
+wget https://github.com/Mnz19/Portfolio-ThiagoMenezes/archive/refs/heads/main.zip
+rm /var/www/html/index.html
+unzip main.zip
+cd Portfolio-ThiagoMenezes
+cp -R * /var/www/html/ 
